@@ -64,6 +64,13 @@ import { ManufacturingComponent } from './manufacturing/manufacturing.component'
 import { JobComponent } from './job/job.component';
 import { RefferalComponent } from './refferal/refferal.component';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ItComponent } from './it/it.component';
+import { ProductComponent } from './product/product.component';
+import { SupportComponent } from './support/support.component';
+import { InfraComponent } from './infra/infra.component';
+import { RecruitComponent } from './recruit/recruit.component';
+import { OutsourcingComponent } from './outsourcing/outsourcing.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +93,12 @@ import { RefferalComponent } from './refferal/refferal.component';
     ManufacturingComponent,
     JobComponent,
     RefferalComponent,
+    ItComponent,
+    ProductComponent,
+    SupportComponent,
+    InfraComponent,
+    RecruitComponent,
+    OutsourcingComponent,
    
   ],
   imports: [
@@ -101,6 +114,7 @@ import { RefferalComponent } from './refferal/refferal.component';
     BrowserAnimationsModule ,
     MatFormFieldModule,
     LayoutModule,MatDividerModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

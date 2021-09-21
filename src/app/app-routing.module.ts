@@ -18,6 +18,12 @@ import { TeleComponent } from './tele/tele.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 import { JobComponent } from './job/job.component';
 import { RefferalComponent } from './refferal/refferal.component';
+import { ItComponent } from './it/it.component';
+import { SupportComponent } from './support/support.component';
+import { ProductComponent } from './product/product.component';
+import { OutsourcingComponent } from './outsourcing/outsourcing.component';
+import { RecruitComponent } from './recruit/recruit.component';
+import { InfraComponent } from './infra/infra.component';
 
 export const routes = [
   { path:'', component: HomeComponent  },
@@ -37,8 +43,13 @@ export const routes = [
   { path: 'tele',component: TeleComponent },
   { path: 'manufact',component: ManufacturingComponent },
   { path: 'job', component: JobComponent},
-  { path: 'refferal', component: RefferalComponent}
-  
+  { path: 'refferal', component: RefferalComponent},
+  { path: 'it', component:ItComponent },
+  { path: 'support', component: SupportComponent},
+  { path: 'product', component: ProductComponent },
+  { path: 'outsourcing', component: OutsourcingComponent },
+  { path: 'recruit', component: RecruitComponent},
+  { path: 'infra', component: InfraComponent}
 ];
 
 @NgModule({

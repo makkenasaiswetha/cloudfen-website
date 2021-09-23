@@ -50,8 +50,6 @@ import { OurfocusComponent } from './ourfocus/ourfocus.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { CarrersComponent } from './carrers/carrers.component';
 import { ContactComponent } from './contact/contact.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {LayoutModule} from '@angular/cdk/layout';
@@ -84,8 +82,6 @@ import { OutsourcingComponent } from './outsourcing/outsourcing.component';
     IndustriesComponent,
     CarrersComponent,
     ContactComponent,
-    LoginComponent,
-    RegisterComponent,
     HealthComponent,
     FinancialComponent,
     RetailComponent,

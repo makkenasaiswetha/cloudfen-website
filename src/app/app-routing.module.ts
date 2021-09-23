@@ -9,8 +9,6 @@ import { OurfocusComponent } from './ourfocus/ourfocus.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { CarrersComponent } from './carrers/carrers.component';
 import { ContactComponent } from './contact/contact.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { HealthComponent } from './health/health.component';
 import { FinancialComponent } from './financial/financial.component';
 import { RetailComponent } from './retail/retail.component';
@@ -35,8 +33,6 @@ export const routes = [
   { path: 'industries', component: IndustriesComponent },
   { path: 'carrers', component: CarrersComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
   { path: 'health', component: HealthComponent},
   { path: 'financial',component: FinancialComponent},
   { path: 'retail' ,component: RetailComponent},

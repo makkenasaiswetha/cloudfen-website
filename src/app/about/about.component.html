@@ -29,16 +29,19 @@
 								<span>We value Work Ethics &amp; Environment as it helps in creating a Creative Thinktank</span>
 							</div>
 	
-							<div class="fslider" data-pagi="false" data-animation="fade">
-								<div class="flexslider" style="height: 400px;">
-									<div class="slider-wrap">
-										<div class="slide flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"><a href="#"><img src="assets\images\about\4.jpg" alt="About Image" draggable="false"></a></div>
-										<div class="slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><a href="#"><img src="assets\images\about\3.jpg" alt="About Image" draggable="false"></a></div>
-										<div class="slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><a href="#"><img src="assets\images\about\5jpg" alt="About Image" draggable="false"></a></div>
-										<div class="slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><a href="#"><img src="assets\images\about\6.jpg" alt="About Image" draggable="false"></a></div>
+							<ngb-carousel *ngIf="images" [interval]="5000" >
+								<ng-template ngbSlide *ngFor="let img of images; index as i">
+									<div class="carousel-caption">
+										  <h3>My slide {{i + 1}} </h3>
 									</div>
-								<ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#"><i class="ti-angle-left"></i></a></li><li class="flex-nav-next"><a class="flex-next" href="#"><i class="ti-angle-right"></i></a></li></ul></div>
-							</div>
+										
+									<div class="picsum-img-wrapper">
+										<img fxFlex="100" class="image" src="{{img}}" alt="My image {{i + 1}} description"  >
+									</div>
+								  
+								</ng-template>
+							</ngb-carousel>
+							  
 	
 						</div>
 	

@@ -69,6 +69,7 @@ import { SupportComponent } from './support/support.component';
 import { InfraComponent } from './infra/infra.component';
 import { RecruitComponent } from './recruit/recruit.component';
 import { OutsourcingComponent } from './outsourcing/outsourcing.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,8 @@ import { OutsourcingComponent } from './outsourcing/outsourcing.component';
     BrowserAnimationsModule ,
     MatFormFieldModule,
     LayoutModule,MatDividerModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
